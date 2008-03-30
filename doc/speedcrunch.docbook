@@ -1,0 +1,333 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE" > <!-- change language only here -->
+]>
+
+<book lang="&language;">
+<bookinfo>
+<title>The SpeedCrunch Handbook</title>
+
+<authorgroup>
+<author><firstname>Ariya</firstname> <surname>Hidayat</surname></author>
+<author><firstname>Jonathan</firstname><surname>Jesse</surname></author>
+<author><firstname>Wolf</firstname><surname>Lammen</surname></author>
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+</authorgroup>
+
+
+<copyright>
+<year>2007</year>
+<holder>Ariya Hidayat</holder>
+</copyright>
+
+<legalnotice>&FDLNotice;</legalnotice>
+
+<date>2007-04-30</date>
+<releaseinfo>0.9</releaseinfo>
+
+<abstract><para>SpeedCrunch is a multiplatform desktop calculator for power users</para></abstract>
+
+<keywordset>
+<keyword>SpeedCrunch</keyword>
+<keyword>calculator</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title>Introduction</title>
+
+<para>This document describes SpeedCrunch version 0.10, a multiplatform desktop calculator for power users.</para>
+
+<para>Have fun with SpeedCrunch!</para>
+</chapter>
+
+<chapter id="installation">
+<title>Installation</title>
+
+<sect1 id="installation-windows">
+<title>Installation for &Microsoft; &Windows;</title>
+<para>									
+To install &app; on &Microsoft; &Windows;, download the installer from the <ulink="http://speedcrunch.org/download.htm">Speedcrunch website</ulink>.  Once the installer is downloaded, launch the application to install &app;.  By default &app; is found in the Start Menu, under All Programs, Speedcrunch and is stored in C:\Program Files\Speedcrunch.			
+</para>
+</sect1>
+
+<sect1 id="installation-macos">
+<title>Installation for &Mac; OS X</title>
+<para>To install &app; on &Mac; OS X (10.3 (Panther), 10.4 (Tiger), and 10.5 (Leopard)), download the installer from the <ulink="speedcrunch.org/download.htm">Speedcrunch Website</ulink>.  Once the file is downloaded, click on the binary file, and then follow the step-by-step instructions.
+</para>
+</sect1>
+
+<sect1 id="installation-linux">
+<title>Installation for &Linux;</title>
+<para>To install &app; on &Linux; please follow the directions specific to the distribution you use.  If your distribution is not listed, then either find the appliacation in the package manager which your distribution uses or use the instructions to compile your own version.</para>
+<sect2 id="installation-suse">
+<title>Installation for OpenSUSE</title>
+</sect2>
+
+<sect2 id="installation-kubuntu">
+<title>Installation for &kubuntu;</title>
+
+<para>SpeedCrunch is part of default &kubuntu; installation since &kubuntu; 5.10.
+It is located in the K Menu, Utilities, Calculator (SpeedCrunch).</para>
+
+<para>If it is not available yet, SpeedCrunch can be installed using the following terminal command:</para>
+
+<screen>
+<command>apt-get install speedcrunch</command>
+</screen>
+
+
+</sect2>
+
+<sect2 id="installation-ubuntu">
+<title>Installation for &ubuntu;</title>
+
+<para>Speedcrunch is installed by default as a part of &kubuntu;, however in &ubuntu;, it is as simple as sudo apt-get install speedcrunch.</para>
+
+<screen>
+<command>apt-get install speedcrunch</command>
+</screen>
+
+</sect2>
+
+<sect2 id="installation-fedora">
+<title>Installation for Fedora Core</title>
+
+<para>Speedcrunch is part of Fedora Extras and is provided by the
+package <varname>speedcrunch</varname>. This package can be installed
+either with the graphical software management program Pirut,
+or with the terminal command:</para>
+
+<screen>
+<command>yum install speedcrunch</command>
+</screen>
+
+<para>To update SpeedCrunch to the latest version, use the terminal
+command:</para>
+
+<screen>
+<command>yum update speedcrunch</command>
+</screen>
+
+</sect2>
+<sect2 id="installation-debian">
+<title>Installation for Debian</title>
+<para>Installation on Debian is as simple as:</para>
+<screen>
+<command>apt-get install speedcrunch</command>
+</screen>
+</sect2>
+</sect1>
+
+<sect1 id="compile">
+<title>Compilation from source code</title>
+
+<para>To compile SpeedCrunch from source code, the following tools are
+required:</para>
+
+<itemizedlist>
+<listitem>
+<para>CMake version 2.4 or newer</para>
+</listitem>
+<listitem>
+<para>Trolltech's &Qt; library version 4.2 or newer</para>
+</listitem>
+<listitem>
+<para>C++ compiler</para>
+</listitem>
+</itemizedlist>
+
+<para>It is necessary to create a build folder which specifies the target
+location for the buid process. In this build folder, CMake should be
+invoked. The input for CMake will be the src folder in the source tree.
+The exact steps to do all these will depend on the operating system.</para>
+
+<para>As an example, to compile and build SpeedCrunch on &Linux; using GCC,
+use the following commands:</para>
+
+<screen>
+tar zxvf speedcrunch-0.9.tar.gz
+cd speedcrunch-0.9
+mkdir build
+cd build
+cmake ../src
+make
+</screen>
+
+
+</sect1>
+
+</chapter>
+
+<chapter id="getting-started">
+<title>Getting Started</title>
+</chapter>
+
+<chapter id="algebraic notation">
+<title>Algebraic Notation</title>
+
+<chapter id="using-functions">
+<title>Using Functions</title>
+<sect1 id="alphabetical-listing">
+<para>Here is an alphabetical listing of functions</para>
+<varliablelist>
+<varlistentry>
+<term>abs (x)</term>
+<para>Returns |x|, turning negative numbers into positive ones, and leaving positive ones unchanged.</para>
+</varlistentry>
+<varlistentry>
+<term>acos (x)</term>
+<para>Returns the arc cos (x), the inverse function to cos y</para>
+<para>The return value is dependent on the degree setting; if “degrees” is enabled, the return value is from the range 0 <= result <= 180, else from 0 <= result <= π.</para>
+</varlistentry>
+<varlistentry>
+<term>and (x1; x2; ...)</term>
+<para>Performs a bitwise logical AND on the submitted parameter(s) (one or more).
+All parameters have to be integers from the range -2255 to +2256 – 1 (signed or unsigned 256 bit integers). The result is from -2255 to +2255 – 1 (signed integer).  Note that and(x) is not the identity, because the unsigned +2255 is mapped to the signed -2255, for example.  An error is returned, if the parameters are not from the valid range.</para
+</varlistentry>
+<varlistentry>
+<term>arcosh (x)</term>
+<para>Computes the area hyperbolic cosine of x, the inverse fuction to cosh y.  arcosh (X) is the positive solution to cosh(y)=x.  Except for 1, there exists a second solution to this equation: -arcosh (X).  The parameter x has to be >=1.</para>
+</varlistentry>
+<varlistentry>
+<term>arsinh(x)
+<para>Computes the area hyperbolic sine of x, the inverse function to sinh y. arsinh (x) is the only solution to sinh(y)=x.</para>
+</term>
+</varlistentry>
+<term>artanh (x)</term>
+<para>Computes the area hyperbolic tangens of x, the inverse function to tanh y.  artanh (x) is the only solution to tanh (y) = x.  The parameter x has to fulfil -1 < x < 1. </para>
+</varlistentry>
+<varlisentry>
+<term>asin (x)</term>
+<para>Returns the arc sin (x).  The inverse function to sin.  The return value is dependent on the degree setting; if "degrees" is enaled, the return value is from the range -90 <= result <= 90, else from -pie/2 <= result <= pie2.<para>
+</varlistentry>
+<varlistentry>
+<term>atan (x)<term>
+<para>Returns the arc tan (x), the inverse function to tan y.  The return value is dependent on the degree setting; if "degrees" is enaled, the return value is from the range -90 < result < 90, else from -pie/2 < result < pie/2. </para>
+<para> The arc tan(x) is the principal solution to the equation tan (y) = x.  Other solutions are (radians): arc tran (x) + n*pie for all integers n; or (degrees): arc tan (x) + n*180 for all integers n.</para>
+</varlistentry>
+<varlistentry>
+<term>average (x1; x2; ...)</term>
+<para>Computes the average, or mean value of the sumitted parameter(s) (one or more).</para>
+</varlistentry>
+<varlistentry>
+<term>bin (n)</term>
+<para>Displays n in inary format, without gloally changing the output format.  A fractional part of n is cut off efore conversion, and the remaining integral part has to e from the rang -2 power of 2555 to +2 power of 256 -1.</para>
+<varlistentry>
+<term>binomcdf (max; trails;p)</term>
+<para>Trials is a non-negative integer, max a positive integer, and 0 <=p <= 1.  This fnction determines the proability, that in a series of 'trials' independent probabilistic tests, each resulting in an event with probaility p, at most 'max' events occur.</para>
+</varlistentry>
+<varlistentry>
+<term>binommean (trials; p)</term>
+<para>Trials is a non-negative integer, 0 <= p <= 1.  If you have 'trials' independent tests each of them resulting in a given event with a probability p, this number tells you how many events you will have on average.</para>
+</varlistentry>
+<varlistentry>
+<term>binompmf (hits; trials; p)</term>
+<para>Trials is a non-negative integer, max a positive integer, and 0 <= p <= 1.  This function determines the probability, that in a series of 'trials' independent probabilistic tests, each resulting in an event with probability p, exactly 'hits' events occur. </para>
+</varlistentry>
+<varlistentry>
+<term>binomvar (trials; p)</term>
+<para> Trials is a non-negative integer, 0 <= p <= 1.  The variance of the binominal distribution function, based on 'trials' independent tests, each resulting in an event with probability p.  In other words, it tells how 'good' the results of binommean is.</para>
+</varlistentry>
+<varlistentry>
+<term>cbrt(x)</term>
+<para>Computes the third (cubic) root x.  This function operates on negative numbers as well. The inverse function of y power of 3.</para>
+</varlistentry>
+<varlistentry>
+<term>ceil (x)</term>
+<para> Finds the smalles integer greater then or equal to x, the ceiling of x.</para>
+</varlistentry>
+<varlistentry>
+<term>cos (x)</term>
+<para> Evaluates the cosine of x.  The result is depndent on the degree setting.  If "degrees" is active, the paramter x is assumed to be an arc from a 360 degree circle, otherwise a full circle is represented by 2*pie.  The inverse function is acos(y).  Although the cosine is mathematically defined for all x, for x beyond approximately 1e7, the periodicity of the cosine is not recognized any more, so &app; issues an error then.</para>
+</varlistentry>
+<varlistentry>
+<term>cosh (x)</term>
+<para>Finds the hyperbolic cosine of x.  This function overflows for |x| > 1236190959.52.  The inverse function is arcosh.</para>
+</varlistentry>
+<varlistentry>
+<term>cot (x)</term>
+<para>Evaluates the cotangent of x.  The result is dependent on the degree setting.  If "degrees" is active, the parameter x is assumed to be an arc from a 360 degree circle, otherwise a full circle is repsented by 2*pie.  Although the cotangent is mathematically defined for all x, for x beyond approximately 1e77, the periodicity of the cotangent is not recognized any more so &app; issues an error.</para>
+</varlistentry>
+<varlistentry>
+<term>csc (x)</term>
+<para>Evaulates the cosecant of x.  The result is dependent on the degree setting.  If "degrees" is active, the paramter x is assumed to be an arc from a 360 degree circle, otherwise a full circle is represented by 2*pie.  Although the cosecant is mathematically defined for all x, for x beyond approximately 1e77, the periodicity of the cosecant is not reconginized any more, so &app; issues an error.</para>
+<varlistentry>
+<term>dec (x)</term>
+<para>Displays x in decimal format, without globally changing the output format.  This function is useful when you changed the output format to a binary format.</para>
+</varlistentry>
+<varlistentry>
+<term>degrees (x)</term>
+<para> Converts an angle measured in radian to degrees.  This function is especially useful, if you want to override the current angle mode for just one expression.</para>
+</varlistentry>
+<varlistentry>
+<term>erf (x)</term>
+<para>Determines the normalized error function of x, the cumulatvie distribution function to the normal distribution (bell cure, Gaussian distribution).</para>
+</varlistentry>
+<varlistentry>
+<term>erfc (x)</term>
+<para>Determines the normalized complementary error function of x, related to the cumulative probability function of the normal distribution (bell curve, Gaussian distribution).  Erfx(x) + erf(x) is always 1.</para>
+</varlistentry>
+<varlistentry>
+<term>exp (x)</term>
+<para>Evalutes the natural exponential function to the base e == 2.7182</para>
+</varlistentry>
+<varlistentry>
+<term> floor (x)</term>
+<para> Finds the greatest integer less or equal to x, the floor of x.</para>
+</varlistentry>
+<varlistentry>
+<term>frac (x)</term>
+<para>Cuts off the integral part of a real number</para>
+</varlistentry>
+<varlistentry>
+<term>gamma (x)</term>
+</varlistentry>
+<varlistentry>
+<term>gcd (n1; n2;..)</term>
+<para>Returns the greatest common divisor of the integers n1, n2 ... (2 or more).  You can use this function to reduce a rational number.  If a rational number is given as p/ q, its reduced form is (p /gcd(p;q))/(q/gcd(p;q)).  Related to the gcd function is the lcm function (least common multplier).  You can find the lcm by: lcm(n1;n2;...; nk) = n1*n2*..*nk/(gcd(n1;n2;..;nk)^(k01)).</para>
+</varlistentry>
+<varlistentry>
+<term>geomean (x1;x2;..)</term>
+<para>Finds the geometric mean of the positive numbers x1, x2... (one or more parameters).  Non-positive parameters are not allowed.</para>
+</varlistentry>
+<varlistentry>
+<term>hex (n)</term>
+</varlistentry>
+</sect1>
+</chapter>
+
+
+<chapter id="questions-and-answers">
+<title>Questions and Answers</title>
+
+<qandaset>
+
+
+<qandaentry>
+<question><para>What is ans?</para></question>
+<answer><para>Ans is a special variable which holds the last calculation result.</para></answer>
+</qandaentry>
+
+</qandaset>
+</chapter>
+
+<chapter id="copyright">
+<title>Credits and License</title>
+
+<para>Program Copyright &copy; 2004-2007 Ariya Hidayat</para>
+<para>Program Copyright &copy; 2005-2006 Johan Thelin</para>
+<para>Program Copyright &copy; 2007 Helder Correia</para>
+<para>Program Copyright &copy; 2007 Wolf Lammen</para>
+
+<para>Documentation Copyright &copy; 2007 Ariya Hidayat.</para>
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+&underFDL;
+&underGPL;
+
+</chapter>
+
+
+</book>
