@@ -1,9 +1,6 @@
 # speedcrunch
 
 set(speedcrunch_HEADERS
-#variant/variantbase.hxx
-#variant/variant.hxx
-#variant/real.hxx
 #3rdparty/util/binreloc.h
 base/constants.hxx
 base/evaluator.hxx
