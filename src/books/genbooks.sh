@@ -16,8 +16,8 @@
 # macros                                                                       #
 #------------------------------------------------------------------------------#
 
-T2P="python ../../../tools/template2pot.py -l ""<i18n>"" -r ""</i18n>"" -s ""<hint>"" -e ""</hint>"""
-P2H="python ../../../tools/po2final.py     -l ""<i18n>"" -r ""</i18n>"" -s ""<hint>"" -e ""</hint>"""
+T2P="python ../../../../tools/template2pot.py -l ""<i18n>"" -r ""</i18n>"" -s ""<hint>"" -e ""</hint>"""
+P2H="python ../../../../tools/po2final.py     -l ""<i18n>"" -r ""</i18n>"" -s ""<hint>"" -e ""</hint>"""
 MSM="msgmerge -U --quiet"
 
 
