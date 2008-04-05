@@ -436,6 +436,7 @@ void ResultDisplay::setRadixChar( char c )
   if ( d->radixChar != c )
   {
     d->radixChar = c;
+    refresh();
   }
 }
 
