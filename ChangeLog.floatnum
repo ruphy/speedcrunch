@@ -1,3 +1,9 @@
+2008-04-10
+fixed a buffer overflow
+
+floatnum.c:
+- a temporary buffer in float_setinteger holding the ASCII
+  representation of an int, was 1 byte too short.
 2008-03-29
 fixed a semantic error in floatconfig
 remove expbase from structures in floatio
@@ -98,7 +104,7 @@ testfloatnum
 bug fix
 
 floaterf
-- _erfc could hang for tiny x. Fixed
+- _erfc could hang on tiny x. Fixed
 - tuned _erfc
 floatseries
 - adjusted working precisions to be best for _erfc
@@ -244,7 +250,7 @@ floatcommon
 floatnum
 - make maxdigits mutable
 - bugfix in float_setsignificand (digit count could be off by one in
-    rare encountered special cases)
+    rarely encountered special cases)
 testfloatnum
 - more test cases
 
