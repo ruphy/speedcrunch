@@ -1,3 +1,10 @@
+SpeedCrunch 0.10.1
+---------------------
+Bug fixes:
+  Fixed potential crashes [#180]
+  Fixed keypad button = does not work [#176]
+  Updated binreloc to build in LSB environments
+
 SpeedCrunch 0.10
 ---------------------
 New features:
