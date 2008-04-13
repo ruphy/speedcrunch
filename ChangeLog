@@ -3,6 +3,7 @@ SpeedCrunch 0.10.1
 Bug fixes:
   Fixed potential crashes [#180]
   Fixed keypad button = does not work [#176]
+  Fixed incomplete math book link upon clicking [#177]
   Updated binreloc to build in LSB environments
 
 SpeedCrunch 0.10
