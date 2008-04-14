@@ -199,7 +199,7 @@ void BookDock::setLanguage( const QString & languageCode )
 
   d->language = locale;
   QString path = d->path + d->language + "/";
-  QString src;
+  QString src = path + d->file;
 
   QDir dir( path );
   if ( ! dir.isReadable() )
@@ -207,7 +207,6 @@ void BookDock::setLanguage( const QString & languageCode )
     QString localeShort = locale.left( 2 ).toLower();
     src = d->path + localeShort + "/" + d->file;
   }
-
   d->sheet->setSource( QUrl::fromLocalFile( src ) );
   d->handleLayoutDirection();
 }
