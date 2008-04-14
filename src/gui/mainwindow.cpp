@@ -155,6 +155,7 @@ struct Actions
   QAction * languageSl;
   QAction * languageSv;
   QAction * languageTr;
+  QAction * languageZhCn;
 };
 
 
@@ -450,6 +451,7 @@ void MainWindow::Private::createActions()
   actions.languageSl   = new QAction( QString::fromUtf8( "Slovenščina"         ), p );
   actions.languageSv   = new QAction( QString::fromUtf8( "Svenska"             ), p );
   actions.languageTr   = new QAction( QString::fromUtf8( "Türkçe"              ), p );
+  actions.languageZhCn = new QAction( QString::fromUtf8( "简化字"              ), p );
 
   actions.languageDefault->setData( QString( "C"     ) );
   actions.languageCs     ->setData( QString( "cs"    ) );
@@ -473,6 +475,7 @@ void MainWindow::Private::createActions()
   actions.languageSl     ->setData( QString( "sl"    ) );
   actions.languageSv     ->setData( QString( "sv"    ) );
   actions.languageTr     ->setData( QString( "tr"    ) );
+  actions.languageZhCn   ->setData( QString( "zh_CN" ) );
 
   actions.degree              ->setCheckable( true );
   actions.digits15            ->setCheckable( true );
@@ -527,6 +530,7 @@ void MainWindow::Private::createActions()
   actions.languageSl          ->setCheckable( true );
   actions.languageSv          ->setCheckable( true );
   actions.languageTr          ->setCheckable( true );
+  actions.languageZhCn        ->setCheckable( true );
 }
 
 
@@ -708,6 +712,7 @@ void MainWindow::Private::createActionGroups()
   actionGroups.language->addAction( actions.languageSl );
   actionGroups.language->addAction( actions.languageSv );
   actionGroups.language->addAction( actions.languageTr );
+  actionGroups.language->addAction( actions.languageZhCn );
 }
 
 
@@ -863,6 +868,7 @@ void MainWindow::Private::createMenus()
   menus.language->addAction( actions.languageSl   );
   menus.language->addAction( actions.languageSv   );
   menus.language->addAction( actions.languageTr   );
+  menus.language->addAction( actions.languageZhCn );
 
   // help
   menus.help = new QMenu( "", p );
@@ -1214,6 +1220,7 @@ void MainWindow::Private::createFixedConnections()
   connect( actions.languageSl,                  SIGNAL( triggered()                           ), p,                     SLOT( changeLanguage()                      ) );
   connect( actions.languageSv,                  SIGNAL( triggered()                           ), p,                     SLOT( changeLanguage()                      ) );
   connect( actions.languageTr,                  SIGNAL( triggered()                           ), p,                     SLOT( changeLanguage()                      ) );
+  connect( actions.languageZhCn,                SIGNAL( triggered()                           ), p,                     SLOT( changeLanguage()                      ) );
   connect( widgets.editor,                      SIGNAL( autoCalcEnabled( const QString & )    ), p,                     SLOT( showAutoCalc( const QString & )       ) );
   connect( widgets.editor,                      SIGNAL( autoCalcDisabled()                    ), p,                     SLOT( hideAutoCalc()                        ) );
   connect( widgets.editor,                      SIGNAL( returnPressed()                       ), p,                     SLOT( returnPressed()                       ) );
@@ -1400,6 +1407,8 @@ void MainWindow::Private::checkInitialLanguage()
     actions.languageSv->setChecked( true );
   else if ( settings.language == "tr" )
     actions.languageTr->setChecked( true );
+  else if ( settings.language == "zh_CN" )
+    actions.languageZhCn->setChecked( true );
   else
     actions.languageDefault->setChecked( true );
 }
