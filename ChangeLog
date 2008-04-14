@@ -4,6 +4,7 @@ Bug fixes:
   Fixed potential crashes [#180]
   Fixed keypad button = does not work [#176]
   Fixed incomplete math book link upon clicking [#177]
+  Fixed missing window update on radix character change
   Updated binreloc to build in LSB environments
 
 SpeedCrunch 0.10
