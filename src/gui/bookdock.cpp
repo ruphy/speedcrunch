@@ -199,7 +199,7 @@ void BookDock::setLanguage( const QString & languageCode )
 
   d->language = locale;
   QString path = d->path + d->language + "/";
-  QString src = d->path + d->language + "/" + d->file;
+  QString src;
 
   QDir dir( path );
   if ( ! dir.isReadable() )
