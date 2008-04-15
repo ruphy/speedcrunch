@@ -87,7 +87,7 @@
     </message>
     <message>
         <source>Argentinian Spanish</source>
-        <translation>Argentinisches Spanischen</translation>
+        <translation>Argentinisches Spanisch</translation>
     </message>
     <message>
         <source>Dutch</source>
@@ -139,11 +139,11 @@
     </message>
     <message>
         <source>Basque</source>
-        <translation type="unfinished"></translation>
+        <translation type="Baskisch"></translation>
     </message>
     <message>
         <source>Simplified Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation type="Chinesisch, Kurzzeichen"></translation>
     </message>
 </context>
 <context>
