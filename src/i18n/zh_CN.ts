@@ -920,12 +920,12 @@
     <message>
         <location filename="" line="136178892"/>
         <source>Mask to a bit size</source>
-        <translation type="unfinished"></translation>
+        <translation>反码</translation>
     </message>
     <message>
         <location filename="" line="136178892"/>
         <source>Sign-extent a value</source>
-        <translation type="unfinished"></translation>
+        <translation>反码逆运算</translation>
     </message>
     <message>
         <location filename="" line="136178892"/>
