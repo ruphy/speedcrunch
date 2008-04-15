@@ -283,7 +283,7 @@ AboutBox::AboutBox( QWidget * parent ) : QDialog( parent )
   msg += QString( i18nFmt ).arg( tr( "Dutch"                ) ).arg( "Maarten Fonville"                );
   msg += QString( i18nFmt ).arg( tr( "French"               ) ).arg( "Gr&eacute;gory Treiber"          );
   msg += QString( i18nFmt ).arg( tr( "Finnish"              ) ).arg( "J-P Nurmi"                       );
-  msg += QString( i18nFmt ).arg( tr( "German"               ) ).arg( "Marco Wegner"                    );
+  msg += QString( i18nFmt ).arg( tr( "German"               ) ).arg( "Wolf Lammen"                     );
   msg += QString( i18nFmt ).arg( tr( "Hebrew"               ) ).arg( "Jonathan Avraham"                );
   msg += QString( i18nFmt ).arg( tr( "Indonesian"           ) ).arg( "Yolla Indria"                    );
   msg += QString( i18nFmt ).arg( tr( "Italian"              ) ).arg( "Alessio Sclocco"                 );
@@ -303,7 +303,7 @@ AboutBox::AboutBox( QWidget * parent ) : QDialog( parent )
   msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2004-2007" ).arg( "Ariya Hidayat"  ).arg( "ariya@kde.org"                    );
   msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2005-2006" ).arg( "Johan Thelin"   ).arg( "e8johan@gmail.com"                );
   msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Helder Correia" ).arg( "helder.pereira.correia@gmail.com" );
-  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Wolf Lammen"    ).arg( "ookami1@gmx.de" );
+  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Wolf Lammen"    ).arg( "ookami1@gmx.de"                   );
   msg += "</p>";
 
   msg += "<p>";
