@@ -139,11 +139,11 @@
     </message>
     <message>
         <source>Basque</source>
-        <translation type="Baskisch"></translation>
+        <translation>Baskisch</translation>
     </message>
     <message>
         <source>Simplified Chinese</source>
-        <translation type="Chinesisch, Kurzzeichen"></translation>
+        <translation>Chinesisch, Kurzzeichen</translation>
     </message>
 </context>
 <context>
