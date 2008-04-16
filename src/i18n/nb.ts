@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="nb">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutBox</name>
     <message>
@@ -35,7 +36,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="246"/>
         <source>Thanks to</source>
-        <translation type="unfinished">Takk til</translation>
+        <translation>Takk til</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="274"/>

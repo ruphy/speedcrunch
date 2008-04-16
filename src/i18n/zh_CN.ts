@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="en_US">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutBox</name>
     <message>
@@ -45,7 +46,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="246"/>
         <source>Thanks to</source>
-        <translation type="unfinished">感谢</translation>
+        <translation>感谢</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="274"/>
@@ -165,7 +166,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="325"/>
         <source>Visit &lt;b&gt;http://www.speedcrunch.org&lt;/b&gt; for more information!</source>
-        <translation>更多信息请访问 &lt;b&gt;http://www.speedcrunch.org&lt;/b&gt;！</translation>
+        <translation>更多信息请访问 &lt;b&gt;http://www.speedcrunch.org&lt;/b&gt;!</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="330"/>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1">
+<!DOCTYPE TS><TS version="1.1" language="nb_NO">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutBox</name>
     <message>
@@ -80,7 +81,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="246"/>
         <source>Thanks to</source>
-        <translation type="unfinished">Спасибо</translation>
+        <translation>Спасибо</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="274"/>
@@ -105,7 +106,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="325"/>
         <source>Visit &lt;b&gt;http://www.speedcrunch.org&lt;/b&gt; for more information!</source>
-        <translation>Для большей информации посетите &lt;b&gt;http://www.speedcrunch.org&lt;/b&gt;</translation>
+        <translation>Для большей информации посетите &lt;b&gt;http://www.speedcrunch.org&lt;/b&gt;!</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="280"/>

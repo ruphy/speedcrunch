@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="1.1">
+<!DOCTYPE TS><TS version="1.1" language="nb_NO">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutBox</name>
     <message>
@@ -80,7 +81,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="246"/>
         <source>Thanks to</source>
-        <translation type="unfinished">Agradecimentos a</translation>
+        <translation>Agradecimentos a</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="274"/>
@@ -175,17 +176,17 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="281"/>
         <source>Basque</source>
-        <translation type="unfinished"></translation>
+        <translation>Basco</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="297"/>
         <source>Simplified Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation>Chinës Simplificado</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="283"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Catalão</translation>
     </message>
 </context>
 <context>
