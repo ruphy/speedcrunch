@@ -80,7 +80,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="246"/>
         <source>Thanks to</source>
-        <translation type="unfinished">Vielen Dank an</translation>
+        <translation>Vielen Dank an</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="274"/>
@@ -185,7 +185,7 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="283"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalanisch</translation>
     </message>
 </context>
 <context>
