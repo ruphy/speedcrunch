@@ -53,13 +53,13 @@ void BookDock::Private::handleLayoutDirection()
 {
   if ( p->layoutDirection() == Qt::RightToLeft )
   {
-    buttonLayout->removeWidget( forwardButton );
-    buttonLayout->insertWidget( 0, forwardButton );
+    backButton->setIcon( QPixmap( ":/book_forward.png" ) );
+    forwardButton->setIcon( QPixmap( ":/book_back.png" ) );
   }
   else
   {
-    buttonLayout->removeWidget( backButton );
-    buttonLayout->insertWidget( 0, backButton );
+    backButton->setIcon( QPixmap( ":/book_back.png" ) );
+    forwardButton->setIcon( QPixmap( ":/book_forward.png" ) );
   }
 }
 
@@ -155,7 +155,7 @@ void BookDock::anchorClicked ( const QUrl & link )
     // Qt 4.3 and earlier do not properly decode the URL
     // and thus %5E does not become ^
     // We do it manually here
-    expr.replace( QLatin1String("%5E"), QLatin1String("^"), Qt::CaseInsensitive );
+    expr.replace( QLatin1String( "%5E" ), QLatin1String( "^" ), Qt::CaseInsensitive );
 #endif
 
     emit expressionSelected( expr );
