@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS><TS version="1.1" language="nb">
+<defaultcodec></defaultcodec>
 <context>
     <name>AboutBox</name>
     <message>
@@ -95,12 +96,12 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="314"/>
         <source>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version</source>
-        <translation type="unfinished"></translation>
+        <translation>Dette programmet er fri programvare. Du kan omdistribuere og/eller endre det i henhold til vilkårene spesifisert i GNU General Public Lisence av Free Softeware Foundation. Versjon 2 eller, på eget ønske, en senere versjon kan benyttes.</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="320"/>
         <source>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.</source>
-        <translation type="unfinished"></translation>
+        <translation>Dette programmet disitribueres i håpet at det vil være brukbart for noen. Det gis INGEN GARANTI for programmet, ikke en gang implisitt for spesifikk bruk eller for merkantile formål. Se GNU Public License for videre detaljer.</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="324"/>
@@ -175,17 +176,17 @@
     <message>
         <location filename="../gui/aboutbox.cpp" line="280"/>
         <source>Basque</source>
-        <translation type="unfinished"></translation>
+        <translation>Baskisk</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="296"/>
         <source>Simplified Chinese</source>
-        <translation type="unfinished"></translation>
+        <translation>Forenklet kinesisk</translation>
     </message>
     <message>
         <location filename="../gui/aboutbox.cpp" line="282"/>
         <source>Catalan</source>
-        <translation type="unfinished"></translation>
+        <translation>Katalansk</translation>
     </message>
 </context>
 <context>
@@ -874,7 +875,7 @@
     <message>
         <location filename="../base/functions.cpp" line="726"/>
         <source>underflow</source>
-        <translation type="unfinished"></translation>
+        <translation>underflyt</translation>
     </message>
     <message>
         <location filename="../base/functions.cpp" line="861"/>
@@ -1231,7 +1232,7 @@ Venstreklikk på ikonet for å gjenopprette eller høyreklikk for innstillinger.
     <message>
         <location filename="../gui/mainwindow.cpp" line="1972"/>
         <source>Radian</source>
-        <translation type="unfinished"></translation>
+        <translation>Radian</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.cpp" line="2330"/>
@@ -1282,7 +1283,8 @@ Venstreklikk på ikonet for å gjenopprette eller høyreklikk for innstillinger.
         <location filename="../gui/mainwindow.cpp" line="1822"/>
         <source>Merge session being imported with current session?
 If no, current variables and display will be cleared.</source>
-        <translation type="unfinished"></translation>
+        <translation>Flett importert økt inn i pågående økt?
+Hvis ikke, vil inneværende variabler og skjerm bli tømt.</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.cpp" line="2028"/>
@@ -1412,7 +1414,7 @@ If no, current variables and display will be cleared.</source>
     <message>
         <location filename="../gui/mainwindow.cpp" line="629"/>
         <source>Always On &amp;Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Alltid &amp;øverst</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.cpp" line="630"/>
@@ -1442,7 +1444,7 @@ If no, current variables and display will be cleared.</source>
     <message>
         <location filename="../gui/mainwindow.cpp" line="635"/>
         <source>&amp;Radian</source>
-        <translation type="unfinished"></translation>
+        <translation>&amp;Radian</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.cpp" line="636"/>
