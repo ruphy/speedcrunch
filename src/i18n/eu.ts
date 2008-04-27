@@ -664,7 +664,7 @@
     <message>
         <location filename="../base/functions.cpp" line="1464"/>
         <source>Extension of Factorials [= (x-1)!]</source>
-        <translation type="unfinished"></translation>
+        <translation>Faktorialen Hedapena [= (x-1)!]</translation>
     </message>
     <message>
         <location filename="../base/functions.cpp" line="1465"/>
@@ -964,7 +964,7 @@
     <message>
         <location filename="../base/functions.cpp" line="1534"/>
         <source>Integer Quotient</source>
-        <translation type="unfinished"></translation>
+        <translation>Zatidura Osoa</translation>
     </message>
     <message>
         <location filename="../base/functions.cpp" line="1535"/>
@@ -1502,7 +1502,7 @@
     <message>
         <location filename="../gui/mainwindow.cpp" line="899"/>
         <source>Radix &amp;Character</source>
-        <translation type="unfinished"></translation>
+        <translation>Hamartar Banatzeko &amp;Karakterea</translation>
     </message>
     <message>
         <location filename="../gui/mainwindow.cpp" line="900"/>
