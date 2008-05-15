@@ -227,7 +227,8 @@ AboutBox::AboutBox( QWidget * parent ) : QDialog( parent )
   msg += QString( mainFmt ).arg( tr("Based on original idea from") ).arg( "Roberto Alsina" );
   msg += QString( mainFmt ).arg( tr("Original author") ).arg( "Ariya Hidayat" );
   msg += QString( mainFmt ).arg( tr("Current maintainer") ).arg( "Helder Correia" );
-  msg += QString( mainFmt ).arg( tr("Developers") ).arg( "Ariya Hidayat<br>"
+  msg += QString( mainFmt ).arg( tr("Developers") ).arg( "Alessandro Portale<br>"
+                                                         "Ariya Hidayat<br>"
                                                          "Helder Correia<br>"
                                                          "Johan Thelin<br>"
                                                          "Petri Damst&eacute;n<br>"
@@ -303,10 +304,11 @@ AboutBox::AboutBox( QWidget * parent ) : QDialog( parent )
 
   msg += "<p>";
   const char * copyFmt = "<b>%1 %2 %3</b><br><i>%4</i><br><br>";
-  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2004-2007" ).arg( "Ariya Hidayat"  ).arg( "ariya@kde.org"                    );
-  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2005-2006" ).arg( "Johan Thelin"   ).arg( "e8johan@gmail.com"                );
-  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Helder Correia" ).arg( "helder.pereira.correia@gmail.com" );
-  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Wolf Lammen"    ).arg( "ookami1@gmx.de"                   );
+  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2004-2007" ).arg( "Ariya Hidayat"      ).arg( "ariya@kde.org"                     );
+  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2005-2006" ).arg( "Johan Thelin"       ).arg( "e8johan@gmail.com"                 );
+  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Helder Correia"     ).arg( "helder.pereira.correia@gmail.com"  );
+  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2007-2008" ).arg( "Wolf Lammen"        ).arg( "ookami1@gmx.de"                    );
+  msg += QString( copyFmt ).arg( tr("Copyright (C)") ).arg( "2008"      ).arg( "Alessandro Portale" ).arg( "alessandro.portale@googlemail.com" );
   msg += "</p>";
 
   msg += "<p>";
